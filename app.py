@@ -19,7 +19,7 @@ st.set_page_config(page_title="sic_/",
 def Draw(algo): 
     pas = algo.pas
     img  = Image.fromarray(algo.arr.astype('uint8'), 'RGB')
-    font = ImageFont.truetype('/usr/share/fonts/truetype/arial.ttf', 15)
+    font = ImageFont.truetype('arial.ttf', 15)
     draw = ImageDraw.Draw(img)
     pos  = tuple(zip(*np.where(algo.env.grid >= 1)))
    
