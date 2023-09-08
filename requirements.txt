@@ -1,0 +1,7 @@
+openpyxl
+XlsxWriter
+plotly
+matplotlib
+networkx
+streamlit
+streamlit_image_coordinates

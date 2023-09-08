@@ -9,7 +9,8 @@ Created by bertrand pelletier  in 2022.
 
 nuitka --standalone --onefile --windows-disable-console --include-data-dir=assets=assets --windows-icon-from-ico=assets/homm.ico --follow-imports homm.py
 """
-
+# https://kitao.github.io/pyxel/wasm/examples/pyxel_editor.html
+# https://kitao.github.io/pyxel/?run=egos.homm.homm&packages=numpy
 from collections import deque, namedtuple
 import numpy as np
 import pyxel
