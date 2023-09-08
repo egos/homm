@@ -72,7 +72,6 @@ def env_(Tpos_ini, custom = True, size = 10):
         grid0 = np.full((size, size), 0)
         grid0[0,:] , grid0[:,0] , grid0[:,-1], grid0[-1,:] = 1,1,1,1
         grid = grid0.copy()
-        # Tpos_ini = [(3,3)]
     
     if Tpos_ini: 
         pos = tuple(zip(*Tpos_ini))
