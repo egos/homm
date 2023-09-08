@@ -45,7 +45,7 @@ def Draw(algo):
             draw.rectangle((x,y, x+pas,y+pas), fill=(0, 192, 192), outline=(255, 255, 255))            
             text = 'R' + str(i)
             if i == 0 : text = 'R'
-            draw.text((x+pas/2,y + pas/2), text,font=fnt, align ="center",anchor="mm")
+            draw.text((x+pas/2,y + pas/2), text,font=font, align ="center",anchor="mm")
             
         if grid[point] == 3:
             draw.rectangle((x,y, x+pas,y+pas), fill=(150, 150, 0), outline=(255, 255, 255))
