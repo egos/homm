@@ -63,7 +63,11 @@ def Path2(A,start,goal):
 
 def env_(Tpos_ini, custom = True, size = 10):
     if custom :
-        grid0 = np.genfromtxt('A.csv', delimiter=",", dtype=int).T
+        df = pd.read_csv('A.csv', delimiter=",", header= None)
+        # print(df.values.astype(int).T)
+        # grid0 = np.genfromtxt('A.csv', delimiter=",", dtype=int).T
+        grid0 = df.values.astype(int).T
+        # print(grid0)
         size = grid0.shape[0]
         grid = grid0.copy()
         start = (3,6)
